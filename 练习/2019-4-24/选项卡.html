@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="warp">
+        <button class="active">按钮1</button>
+        <button>按钮2</button>
+        <button>按钮3</button>
+        <section id="box">
+            <div class="show">头条</div>
+            <div>体育</div>
+            <div>新闻</div>
+        </section>
+    </div>
+    <script>
+        function fn(id){
+            this.warp = document.getElementById(id);
+            this.btns = this.warp.querySelectorAll('button');
+            this.divs = this.warp.querySelectorAll('div');
+        }
+        fn.prototype.events=function(){
+            let that=this;
+        }
+    </script>
+</body>
+
+</html>
